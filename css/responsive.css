@@ -1,0 +1,133 @@
+@media screen and (max-width: 850px) {
+
+  .burger {
+    display: block !important;
+    z-index: 3000 !important;
+  }
+
+  .nav-menu {
+    width: 100%;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    right: 0px;
+    left: 0px;
+    height: 80vh;
+    transform: translateY(-100%);
+    transition: transform 1s 0s ease-in-out;
+    z-index: 2000;
+  }
+
+  ul {
+    padding-left: 0em;
+  }
+
+  .nav-menu li {
+    margin: 20px;
+    opacity: 0;
+  }
+
+  .nav-active {
+    background: white;
+    transform: translateY(0%);
+  }
+
+  @keyframes navLinkFade {
+    from {
+      opacity: 0;
+      transform: translateX(50px);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0px);
+    }
+  }
+
+  .toggle .line:first-child {
+    width: 24px;
+    transform: rotate(-45deg) translate(-5px, 6px);
+  }
+
+  .toggle .line:last-child {
+    transform: rotate(45deg) translate(-5px, -6px);
+  }
+
+  .rates__content {
+    height: 3em !important;
+    padding: .7em 1em 0em 1em !important;
+  }
+
+  .rates__content p {
+    font-size: 1em !important;
+  }
+  
+}
+
+@media screen and (min-width: 850px) {
+  .contact__card {
+    width: 50% !important;
+    /* padding: 1em 2em; */
+  }
+
+  header {
+    padding: 0em 6em;
+  }
+
+  .navbar {
+    padding: 1rem 0rem .5rem 0rem !important;
+  }
+  
+  .second__section-content h2 {
+    font-size: 3em !important;
+  }
+
+  .fifth__content-img {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .slider-holder {
+    max-width: 800px !important;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .contact__card .contact__number {
+    font-size: .8em !important;
+  }
+  
+  .contact__number p {
+    margin-top: 5px;
+  }
+  
+  .contact__icons  i {
+    margin-top: 5px;
+    font-size: .8em !important;
+  }
+
+  .second__section-content {
+    top: 40% !important;
+  }
+  
+  .second__section-content h2 {
+    font-size: 1.7em !important;
+  }
+
+  .second__section-content .btn-secondary {
+    padding: .7rem 3rem !important;
+  }
+
+  .fourth__section-content img {
+    width: 20px;
+  }
+  
+  .fourth__section-content h2 {
+    font-size: 1em;
+  }
+
+  .hidden .mb-5 {
+    margin-bottom: 0px !important;
+  }
+}
